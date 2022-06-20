@@ -71,6 +71,7 @@
     align-items: flex-end;
 }
 
+
 .message__bubble{
     background-color: white;
     padding: 8px 13px;
@@ -97,14 +98,6 @@
     margin-left: 5px;
 }
 
-/* .message-row--own .message__bubble{
-    order: 1;
-    margin-left: 5px;
-}
-
-.message-row--own .message__time{
-    order: 0;
-} */
 
 .message-row--own .message__info{
     flex-direction: row-reverse;
@@ -192,4 +185,8 @@
 
 .reply:focus-within {
     transform: translateY(80px);
+}
+
+.block{
+    display: block;
 }
