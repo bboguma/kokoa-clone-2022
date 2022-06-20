@@ -1,0 +1,58 @@
+.welcome-header{
+    margin: 70px 0px;  /*원래 90px*/
+    text-align: center; /*h1,p가 있어서 이렇게 씀*/
+    display:flex; 
+    flex-direction: column;
+    align-items: center;  /*웰컴헤더텍스트 부분을 가운데 오게 하기 위해*/
+}
+
+.welcome-header__title{
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.welcome-header__text{
+    width: 60%;
+    opacity: 0.7;
+}
+
+#login-form{
+    display:flex;  
+    flex-direction: column; /*폼 안에 있는 녀석들을 밑으로 배치하기 위해*/
+    margin: 0px 30px;
+}
+
+#login-form input:not([type="submit"]){  /*input type이 submit이 아닐 때*/
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    transition: border-color 0.3s ease-in-out;
+}
+
+#login-form input{
+    border: none;
+    padding: 15px 0px;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+#login-form input::placeholder{  /*placeholder의 색상을 지정*/
+    color: rgba(0,0,0,0.4);  
+}
+
+#login-form input:focus{  /*input 클릭 시 보더색상 변경*/
+    border-color: var(--yellow);
+}
+
+#login-form input[type="submit"]{
+    background-color: var(--yellow);
+    cursor: pointer;  /*마우스 모양 바뀜*/
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 18px 0px;
+}
+
+#login-form a{
+    text-align: center;
+    text-decoration: none;
+    color:inherit;  /*inheritance(상속) 부모에게 물려받은 것, 여기서 a가 부모로부터 기본값 블랙을 받아옴*/
+    font-size: 13px;
+}

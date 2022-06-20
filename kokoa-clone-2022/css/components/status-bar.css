@@ -1,0 +1,35 @@
+/* 상태바를 center 말고 css hacker로 중심 지정
+모든 상태바 컬럼에 33% 넓이 지정 후 2,3번째 자식별로 센터지정함 */
+
+.status-bar{
+    position: fixed;
+    top:0;
+    width:100%;
+    box-sizing: border-box;  /*상태바 상단고정 및 넓이와 마법의 한 줄*/
+    display: flex;
+    justify-content: center;
+    padding: 5px 3px;
+}
+
+.status-bar__column{
+    width: 33%;
+}
+
+.status-bar__column:first-child span{
+    margin-right: 5px;
+}
+
+.status-bar__column:nth-child(2){
+    display:flex;
+    justify-content: center;
+}
+
+.status-bar__column:last-child{
+    display:flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+.status-bar__column .fa-battery-full {
+    margin:0px 5px;
+}

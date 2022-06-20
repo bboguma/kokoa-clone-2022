@@ -1,0 +1,27 @@
+#friends-display-link{
+    text-align: center;
+    display: block; /* 하나의 박스 형태로 만들어줌 */
+    background-color: #fafafa;
+    padding:15px 0px;
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+
+#friends-display-link i{
+    color: rgba(0,0,0,0.3);
+}
+
+.friends-screen{
+    padding: 0px var(--horizontal-space);
+}
+
+
+.friends-screen__channel-header{
+    margin-bottom: 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    color:rgba(0,0,0,0.5);
+}
+
+
