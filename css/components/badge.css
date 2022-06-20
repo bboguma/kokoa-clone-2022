@@ -1,0 +1,12 @@
+/* 여러 화면에 적용될 수 있도록 뱃지 클래스를 만듦 */
+.badge{
+    background-color: tomato;
+    width: 22px;
+    height: 22px;
+    border-radius: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+}

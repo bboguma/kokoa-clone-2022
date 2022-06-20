@@ -2,7 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px var(--horizontal-space) 30px var(--horizontal-space) ;
+    padding: 50px var(--horizontal-space) 45px var(--horizontal-space) ;
+    margin-bottom: 15px;
 }
 
 .screen-header__title{
@@ -10,6 +11,42 @@
     font-weight: 600;
 }
 
+.screen-header__icons{
+    position: relative;
+}
+
 .screen-header__icons span{
     margin-left: 25px;
+}
+
+.screen-header__dot-find{
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    background-color: tomato;
+    position: absolute;
+    bottom:23px;
+    left: 95px;
+} 
+
+.screen-header__dot-more{
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    background-color: tomato;
+    position: absolute;
+    bottom:23px;
+    left: 142px;
+}
+
+@keyframes rotateCog{
+    from{
+        transform: none;
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+.screen-header__icons .fa-cog:hover{
+    animation: rotateCog 1s linear infinite;
 }

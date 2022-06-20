@@ -1,5 +1,9 @@
 .user-component{
     justify-content: space-between;
+    margin-top: 15px;
+}
+.user-component__column{
+    margin-bottom: 10px;
 }
 
 .user-component,
@@ -8,10 +12,23 @@
     align-items: center;
 }
 
+.user__component__number{
+    display: flex;
+    position: relative;
+}
+
+.user__component__number i{
+    color:red;
+    position: absolute;
+    left: 128px;
+    top: 10px;
+    font-size: 14px;
+}
+
 .user-component__avatar{
-    width:68px;
-    height: 68px;
-    border-radius: 26px;
+    width:58px;
+    height: 58px;
+    border-radius: 22px;
     margin-right: 20px;
 }
 
@@ -27,26 +44,30 @@
 }
 
 .user-component__avatar--xl{
-    width:78px;
-    height: 78px;
+    width:68px;
+    height: 68px;
 }
 
 .user-component__avatar--sm{
-    width: 58px;
-    height: 58px;
-    border-radius: 22px;
+    width: 48px;
+    height: 48px;
+    border-radius: 18px;
 }
 
 .user-component__title--not-bold{
     font-weight: 500;
-}
-
-.friends-screen__channel{
-    margin-top: 22px;
-    border-top: 1px solid rgba(0,0,0,0.1);
-    padding-top: 15px;
+    font-size: 18px;
 }
 
 .user-component__column:last-child{
-    color:rgba(0,0,0,0.5);
+    color:rgba(0,0,0,0.4);
+    /*이 부분이 chats.html의 badge부분*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.user-component__time{
+    display: block;  /*span은 box가 아니어서 margin은 줄 수 없기에,,*/
+    margin-bottom: 10px;
 }
